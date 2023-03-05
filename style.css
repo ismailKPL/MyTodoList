@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2e2e2e;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .h1TODO {
+    font-size: 60px;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Bonny', Arial, Helvetica, sans-serif;
+    transition: ease-out 0.5s;
+  }
+  
+  .h1TODO:hover {
+    color: crimson;
+    text-shadow: 0px 0px 20px black;
+    transition: ease 0.2s;
+}
+
+
+  form {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .divList {
+    position: relative;
+    z-index: 99999999;
+}
+  
+.taskInput {
+    padding: 10px;
+    width: 70%;
+    border: 2px solid #ccc;
+    border-radius: 31px;
+    font-size: 16px;
+  }
+  
+  .addButton {
+    padding: 0;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 39px;
+    cursor: pointer;
+    font-size: 28px;
+    margin-left: -37px;
+    height: 32px;
+    width: 32px;
+  }
+  
+  .addButton:hover {
+    opacity: 0.7;
+  }
+  
+  .taskList {
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column-reverse;
+    width: 100%;
+  }
+  
+  li {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 0fr;
+    align-items: center;
+    text-align: start;
+    gap: 5px;
+    width: 90%;
+  }
+
+  .btnSupp {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    background: crimson;
+    color: white;
+    transition: ease 0.2s;
+    cursor: pointer;
+    padding: 0px;
+    mix-blend-mode: darken;
+    order: 2;
+}
+
+.btnSupp:hover {
+  opacity: 0.7;
+  border-radius: 20px 28px;
+}
+
+.btnCheck {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 25px;
+  background: green;
+  color: white;
+  transition: ease 0.2s;
+  cursor: pointer;
+  padding: 0px;
+  mix-blend-mode: darken;
+  order: 1;
+}
+
+.btnCheck:hover {
+  opacity: 0.7;
+  border-radius: 20px 28px;
+}
+
+svg {
+    position: relative;
+    z-index: -111;
+}
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+
+  .rond {
+    width: 46%;
+    height: 60%;
+    background: crimson;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -24;
+    border-radius: 100%;
+    filter: blur(177px);
+    animation: animrond 15s infinite ;
+}
+
+@keyframes animrond {
+
+  0%{
+    transform: translate(0, 0);
+  }
+
+  50%{
+    transform: translate(80px, -60px);
+
+  }
+
+  100%{
+    transform: translate(0, 0);
+
+
+  }
+}
+
+.rond2 {
+  width: 300px;
+    height: 300px;
+    background: crimson;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -24;
+    border-radius: 100%;
+    filter: blur(177px);
+    animation: animrond2 15s infinite ;
+}
+
+@keyframes animrond2 {
+
+  0%{
+    transform: translate(0, 0);
+  }
+
+  50%{
+    transform: translate(-66px, 50px);
+
+  }
+
+  100%{
+    transform: translate(0, 0);
+
+
+  }
+}
+
+.rond3 {
+  width: 39%;
+  height: 50%;
+  background: #ed143dcc;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -24;
+  border-radius: 100%;
+  filter: blur(177px);
+  animation: animrond3 20s infinite;
+}
+@keyframes animrond3 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-290px, -340px);
+  }
+  
+  100% {
+    transform: translate(0, 0);
+  }
+}
