@@ -6,11 +6,18 @@
 
 body{
     background: #2e2e2e;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: end;
+
 }
 .container {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+    width: 100%;
   }
   
   .h1TODO {
@@ -143,14 +150,14 @@ svg {
   .rond {
     width: 46%;
     height: 60%;
-    background: crimson;
+    background: #ed143d82;
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: -24;
     border-radius: 100%;
     filter: blur(177px);
-    animation: animrond 15s infinite ;
+    animation: animrond 35s infinite ;
 }
 
 @keyframes animrond {
@@ -160,10 +167,9 @@ svg {
   }
 
   50%{
-    transform: translate(80px, -60px);
+    transform: translate(80px, -230px);
 
   }
-
   100%{
     transform: translate(0, 0);
 
@@ -205,14 +211,14 @@ svg {
 .rond3 {
   width: 39%;
   height: 50%;
-  background: #ed143dcc;
+  background: #ed143d78;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -24;
   border-radius: 100%;
   filter: blur(177px);
-  animation: animrond3 20s infinite;
+  animation: animrond3 25s infinite;
 }
 @keyframes animrond3 {
   0% {
@@ -220,10 +226,36 @@ svg {
   }
 
   50% {
-    transform: translate(-290px, -340px);
+    transform: translate(-230px, -250px);
   }
   
   100% {
     transform: translate(0, 0);
   }
+}
+
+footer {
+  width: 50%;
+  height: 50px;
+  background: #2e2e2e;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px 60px 0 0;
+}
+@media screen and (max-width:500px) {
+  footer {
+    border-radius: 40px 40px 0 0;
+  }
+  
+}
+.pISM {
+  color: crimson;
+}
+
+.pISMlien {
+  color: crimson;
+  text-decoration: none;
+  font-weight: 600;
 }
