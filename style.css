@@ -248,8 +248,30 @@ footer {
   footer {
     border-radius: 40px 40px 0 0;
   }
-  
+
+  li {
+    padding: 5px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    gap: 5px;
+    padding-left: 10px;
+  }
+
+  .btnSupp {
+    width: 25px;
+    height: 25px;
+  }
+
+  .btnCheck {
+    width: 25px;
+    height: 25px;
+  }
+  .taskList {
+    width: 95%;
+  }
+
 }
+
 .pISM {
   color: crimson;
 }
