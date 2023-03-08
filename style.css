@@ -26,6 +26,23 @@ body{
     color: white;
     font-family: 'Bonny', Arial, Helvetica, sans-serif;
     transition: ease-out 0.5s;
+    clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
+    animation: animh1 1s forwards cubic-bezier(0.45, 0.5, 0.08, 0.86) 1s;
+  }
+
+  @keyframes animh1 {
+    0% {
+      clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
+      transform: translateY(60px);
+      opacity: 0;
+    }
+
+    100% {
+      clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+      transform: translateY(0px);
+      opacity: 1;
+
+    }
   }
   
   .h1TODO:hover {
@@ -40,6 +57,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    animation: animform 1s forwards cubic-bezier(0.45, 0.5, 0.08, 0.86) 0.3s;
+  }
+
+  @keyframes animform {
+
+    0% {
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
   }
 
   .divList {
@@ -51,7 +81,7 @@ body{
     padding: 10px;
     width: 70%;
     border: 2px solid #ccc;
-    border-radius: 31px;
+    border-radius: 7px 31px 31px 7px;
     font-size: 16px;
   }
   
@@ -87,7 +117,7 @@ body{
     padding: 10px;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
-    border-radius: 50px;
+    border-radius: 7px 31px 31px 7px;
     margin-bottom: 30px;
     font-size: 20px;
     display: grid;
